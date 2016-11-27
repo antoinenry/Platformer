@@ -1,23 +1,35 @@
-Ce projet a été développé avec OpenGL, glew et glut, ainsi qu'une fonction de LodePNG par Lode Vandevenne.
-Les autres fonctions, incluant le moteur physique et l'animation, sont entièrement ma création.
+Platformer project
+==================
 
-Le code fonctionne sous Linux.
+This project was coded in C++ with Qt Linux. It uses OpenGL, GLEW, GLUT and [LodePNG](https://github.com/lvandeve/lodepng).
 
-Il s'agit d'une ébauche de jeu de plate-forme/shoot'em up en 2D.
-Le but du projet était de créer une mécanique de jeux permettant de lier l'aspect jeu de tir et l'aspect jeu de plate-forme,
-en permettant notamment au joueur d'utiliser ses armes comme moyen de propulsion.
+![Platformer](https://github.com/antoinenry/Platformer/blob/master/Platformer/Screenshots/4.png)
 
---COMMENT JOUER---------------------------------------------------------------------------------
-Contrôles: 	Q,D pour se déplacer à gauche et à droite
-		Z pour sauter
-		S pour se baisser (il manque une animation...)
-		A et E pour dégainner/rengainner/sélectionner l'arme (fusil à pompe, SMG)
-		Souris pour viser
-		Clic gauche pour tirer
-		Clic droit pour recharger
-Les deux armes permettent de se propulser par un effet de recul puissant.
--> Sauter puis tirer vers le bas avec le fusil à pompe permet de vous lancer encore plus haut
--> faire de même avec le SMG permet de planer quelques instants.
-Il est également possible de sauter en appui sur les murs en maintenant la touche de saut et la bonne direction.
-Lorsqu'aucune arme n'est dégainée, le héros peut également s'accrocher au rebords.
--------------------------------------------------------------------------------------------------
+Main features
+-------------
+The game is a 2D platform/shoot'em up. The main idea was to combine tose two game types by allowing the player to use fire weapons as propulsion devices.
+The exagerated recoil can be used to jump higher, run faster or hover in the air.
+The main features I coded are:
+
+- 2D physic engine
+- Sprite animation
+- Player-stalking ennemies
+- Arcade type: ennemies spawn until you die
+- Two weapons: shotgun and SMG
+- Score counting
+- Spritesheet-based function to write menus and display score
+- Fast-paced movements: wall jump and recoil boost
+
+How to play
+-----------
+The executable should run on Ubuntu with OpenGL installed.
+**Controls:** 	Q,D to move right and left
+		Z to jump
+		S to duck (animation missing...)
+		A, E to select SMG and shotgun, or draw/undraw weapon
+		Mouse to aim
+		Left mouse button to fire
+		Right mouse button to reload
+You can grab on to ledges when your hands are free...
+
+![Platformer](https://github.com/antoinenry/Platformer/blob/master/Platformer/Screenshots/1.png)
